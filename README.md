@@ -26,7 +26,7 @@ defmodule MyModule do
 
   func simple do
     if 1 == 1, do: return "It's true"
-    "What the hell?"
+    IO.puts "This message will never be printed"
   end
 
   func function_with_params_and_guard(x, y) when is_integer(x) and is_integer(y) do
