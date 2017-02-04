@@ -46,3 +46,4 @@ end
 *  Make anonymous functions that support `return`
 *  Find a way to combine the `require` and the `import` into one directive
 *  More tests
+*  Publish it
