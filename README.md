@@ -9,7 +9,7 @@ by adding `return` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:return, "~> 0.0.1.alpha1"}]
+  [{:return, "~> 0.0.1"}]
 end
 ```
 
