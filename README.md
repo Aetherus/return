@@ -21,8 +21,7 @@ be found at [https://hexdocs.pm/return](https://hexdocs.pm/return).
 
 ```elixir
 defmodule MyModule do
-  require Return
-  import Return
+  use Return
 
   func simple do
     if 1 == 1, do: return "It's true"
@@ -44,6 +43,4 @@ end
 ## TODO
 
 *  Make anonymous functions that support `return`
-*  Find a way to combine the `require` and the `import` into one directive
 *  More tests
-*  Publish it

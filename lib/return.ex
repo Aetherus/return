@@ -5,8 +5,7 @@ defmodule Return do
   ## Example
 
       defmodule MyModule do
-        require Return
-        import Return
+        use Return
 
         func my_func do
           if true do
@@ -16,6 +15,13 @@ defmodule Return do
         end
       end
   """
+
+  defmacro __using__(_) do
+    quote do
+      require unquote(__MODULE__)
+      import unquote(__MODULE__)
+    end
+  end
 
   @doc """
   Define a public function in which the `return` keyword works.

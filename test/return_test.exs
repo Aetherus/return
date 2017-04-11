@@ -2,8 +2,7 @@ defmodule ReturnTest do
   use ExUnit.Case
   doctest Return
 
-  require Return
-  import Return
+  use Return
 
   test "simple function" do
     assert :ok = simple_fn()
